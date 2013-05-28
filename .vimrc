@@ -1,12 +1,15 @@
-set t_Co=256
+set nocompatible
+set term=xterm-256color
 syntax on
-set background=dark
-colorscheme darkblue
-filetype on
-filetype plugin indent on
 
-" indentation
-set autoindent
-set softtabstop=4
+filetype on
+filetype indent plugin on
+
+set tabstop=4
 set shiftwidth=4
+set softtabstop=4
 set expandtab
+
+set ruler
+set backspace=2
+set title
