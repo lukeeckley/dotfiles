@@ -1,16 +1,32 @@
-set nocompatible
+"
+" Color and Syntax
+" Assuming that the Console/Terminal has a dark background
+"
 set background=dark
-set term=xterm-256color
-syntax on
+syntax enable
+colorscheme koehler
 
-filetype on
-filetype indent plugin on
+"
+" Status line
+"
+set laststatus=2
+set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
+hi statusline ctermfg=black
 
-set tabstop=4
-set shiftwidth=4
-set softtabstop=4
+"
+" Tabs and spaces
+"
 set expandtab
+set smarttab
+set shiftwidth=4
+set tabstop=4
+set ai
+set si
+set nowrap "DONT wrap lines
 
-set ruler
-set backspace=2
-set title
+"
+" Misc
+"
+set encoding=utf8
+filetype plugin on
+filetype indent on
